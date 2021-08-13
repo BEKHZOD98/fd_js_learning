@@ -13,3 +13,18 @@ function fizzBuzz(input) {
 }
 
 console.log(fizzBuzz(15));
+//////////
+const LIMIT_SPEED = 70;
+const KM_PER_POINT = 5;
+checkSpeed(150);
+function checkSpeed(speed){
+    if(speed <= LIMIT_SPEED){
+        console.log('ok');
+    }
+    else{
+        let points=Math.floor((speed-LIMIT_SPEED)/KM_PER_POINT);
+        if(points >= 12){
+            console.log('운정면허증 없어진다');
+        }
+    }
+}
