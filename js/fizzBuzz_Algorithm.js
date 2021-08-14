@@ -17,17 +17,17 @@ console.log(fizzBuzz(15));
 const LIMIT_SPEED = 70;
 const KM_PER_POINT = 5;
 const MAX_POINTS = 12;
-checkSpeed(70);
+checkSpeed(75);
 function checkSpeed(speed){
-    if(speed <= LIMIT_SPEED){
+    if(speed < LIMIT_SPEED+KM_PER_POINT){
         console.log('ok');
+        return;
     }
-    else{
-        let points=Math.floor((speed-LIMIT_SPEED)/KM_PER_POINT);
+    
+        const points=Math.floor((speed-LIMIT_SPEED)/KM_PER_POINT);
         if(points >= MAX_POINTS){
             console.log('운정면허증 없어진다');
         }else{
             console.log(points);
         }
     }
-}
