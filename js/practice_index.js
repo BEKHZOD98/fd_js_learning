@@ -12,6 +12,7 @@
 }
 console.log(sum(55));*/
 ///////////show properties
+/*
  let car = {
      moder: 'Toyota',
      make: 'Estima',
@@ -24,4 +25,30 @@ console.log(sum(55));*/
         console.log(`${key}: ${value}`);}
     }
  }
- showProperties(car);
+ showProperties(car);*/
+
+
+
+ const marks = [81, 74, 86, 59, 77];
+
+ console.log(calculateGrade(marks))
+ 
+ 
+ function calculateAverage(array){
+    let sum = 0;
+    for(let student_point of array){
+          sum+=student_point;
+          
+    }
+    let avarage = Math.floor(sum/5);
+    
+    return avarage;
+ }
+ function calculateGrade(marks){
+     let avrg = calculateAverage(marks);
+    if(avrg < 50) return 'F';
+    if(avrg < 60) return 'D';
+    if(avrg < 70) return 'C';
+    if(avrg < 80) return 'B';
+    return 'A';
+  }
