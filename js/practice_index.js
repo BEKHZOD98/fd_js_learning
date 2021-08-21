@@ -55,21 +55,16 @@ function calculateGrade(marks){
 console.log(showPrimeNumbers(20));
 
 function showPrimeNumbers(limit) {
-
-    for (let num=2; num <=limit; num++) {
-        let isPrime = true;
-        for(let factor = 2; factor<num; factor++){
-        if (num % factor === 0) {
-            isPrime = false;
-            break;
-        }
-        
-    }
-    if(isPrime) console.log(num);
-    
-}}
-
-
+    for (let num=2; num <=limit; num++) 
+        if(isPrime(num)) console.log(num);
+}
+function isPrime(num){
+    for(let factor = 2; factor<num; factor++)
+        if (num % factor === 0) 
+            return false;
+   
+    return true;
+}
 
 
 
