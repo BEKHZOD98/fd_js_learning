@@ -73,10 +73,13 @@ function creatCircle(radius){
 function Circle(radius){
     this.radius = radius;
     this.draw = function(){
-        console.log('doira')
+        console.log('doira');
     }
 }
 const circle = new Circle(1);
+//or
+Circle.call({},1);
 
+///function is object
+console.log(Circle.name, Circle.length, Circle.constructor);
 
-////constructor
