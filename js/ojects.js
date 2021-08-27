@@ -17,7 +17,19 @@ function creatCircle(radius) {
             console.log('circle');
         }
 
-    };
+    };/* or
+function creatCircle(radius){
+    let circle = {
+        radius: rad,
+        location: {
+            x: 2,
+            y: 2
+        }
+        isVisible: true,
+        draw: function
+    }
+}
+    */
 
 }
 
@@ -29,6 +41,7 @@ console.log(circle2);
 
 
 //////////////////this is constructor function:
+/*
 function Circle(radius) {
     this.radius = radius;
     this.num = 1;
@@ -42,7 +55,28 @@ function Circle(radius) {
 }
 
 const circle5 = new Circle(25);
-circle5.color = 'green';
+circle5.color = 'green'; this line is added new properity
+circle5.move = function (){console.log('hello')}
 circle5.num = 5;
 delete circle5.test;
-console.log(circle5);
+console.log(circle5);*/
+
+function creatCircle(radius){
+    return{
+        radius,
+        draw: function(){
+            console.log('doira');
+        }
+    }
+}
+
+function Circle(radius){
+    this.radius = radius;
+    this.draw = function(){
+        console.log('doira')
+    }
+}
+const circle = new Circle(1);
+
+
+////constructor
