@@ -54,3 +54,23 @@ const FigureCircle1 = new Function('rad', `
 const figure = new FigureCircle1(3);
 console.log(figure);
 FigureCircle.call({},4); //const figure = new FigureCircle1(3); this is same
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

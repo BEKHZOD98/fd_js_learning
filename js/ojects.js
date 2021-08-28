@@ -83,3 +83,4 @@ Circle.call({},1);
 ///function is object
 console.log(Circle.name, Circle.length, Circle.constructor);
 
+
