@@ -30,6 +30,7 @@ function lap(name,dis,storage,cBrand,cCore,ram){
             console.log('Laptop');
         }
     };
+    
     return laptop;
     
 }
